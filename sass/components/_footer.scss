@@ -1,0 +1,33 @@
+.footer {
+  background-color: $primary-background-color;
+  padding: 60px 0;
+  display: flex;
+}
+
+.footer__address-wrapper {
+  display: block;
+  margin-right: 70px;
+}
+
+.footer__title {
+  @include font(700, 14px, 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-color;
+  margin-bottom: 20px;
+}
+
+.footer__join-us {
+  display: block;
+  margin-top: 12px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__subscription {
+  margin-left: auto;
+  margin-top: 12px;
+}

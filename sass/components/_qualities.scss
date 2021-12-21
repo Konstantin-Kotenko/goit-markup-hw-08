@@ -1,0 +1,37 @@
+.qualities {
+  display: flex;
+}
+
+.qualities__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.qualities__title {
+  @include font(700, 14px, 1.14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-shade-color;
+  margin-bottom: 10px;
+}
+
+.qualities__paragraph {
+  @include font(400, 14px, 1.71);
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.qualities__icon-wrapper {
+  width: 270px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background: $secondary-background-color;
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.qualities__icon {
+  display: flex;
+  justify-items: center;
+}

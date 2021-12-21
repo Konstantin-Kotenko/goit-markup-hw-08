@@ -1,0 +1,34 @@
+.input-field {
+  margin-bottom: 10px;
+}
+
+.input-field__absolute-wrapper {
+  position: relative;
+}
+
+.input-field__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba($primary-shade-color, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: $accent-color;
+  }
+  &:focus + .input-field__icon {
+    fill: $accent-color;
+  }
+}
+
+.input-field__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,70 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  background: $secondary-color;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: flex;
+  height: auto;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.label {
+  @include font(400, 12px, 1.16);
+  letter-spacing: 0.01em;
+  color: $text-color;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}

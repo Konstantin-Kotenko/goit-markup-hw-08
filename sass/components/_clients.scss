@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+}
+
+.clients__item {
+  display: flex;
+  color: $social-icon-color;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  width: 170px;
+  color: $social-icon-color;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid $social-icon-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,11 @@
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  @extend %section;
+  line-height: 1.17;
+  @extend %text;
+  margin-bottom: 50px;
+  color: $primary-shade-color;
+}

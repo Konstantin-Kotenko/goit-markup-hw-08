@@ -1,0 +1,38 @@
+.checkbox-field {
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-field__label {
+  @extend %field;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-shade-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .checkbox-field__input:checked + & span {
+    background-color: $accent-color;
+    border: none;
+  }
+}
+
+.checkbox-field__agreement {
+  @extend %field;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  color: $accent-color;
+}
