@@ -13,12 +13,11 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   height: auto;
 }
 .container {
-  // width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -27,6 +26,9 @@ img {
   }
   @media screen and (min-width: 768px) {
     width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 

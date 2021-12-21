@@ -2,21 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  @media screen and (min-width: 768px) {
-    margin-left: -60px;
-  }
 }
 
 .clients__item {
   color: $social-icon-color;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
   width: calc(100% / 2 - 30px);
   margin-left: 30px;
   @media screen and (min-width: 768px) {
-    width: calc(100% / 3 - 60px);
-    margin-left: 60px;
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
   }
 }
 
