@@ -1,15 +1,16 @@
 .qualities {
-  display: flex;
+  // display: flex;
 }
 
-.qualities__item:not(:last-child) {
-  margin-right: 30px;
+.qualities__item {
+  width: 100%;
 }
 
 .qualities__title {
   @include font(700, 14px, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: $primary-shade-color;
   margin-bottom: 10px;
 }
@@ -21,13 +22,13 @@
 }
 
 .qualities__icon-wrapper {
-  width: 270px;
+  width: 100%;
   padding-bottom: 25px;
   padding-top: 25px;
   background: $secondary-background-color;
   border-radius: 4px;
   display: flex;
-  margin-bottom: 30px;
+
   justify-content: center;
 }
 
