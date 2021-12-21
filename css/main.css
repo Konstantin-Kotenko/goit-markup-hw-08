@@ -316,6 +316,7 @@ ul {
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list__item {
@@ -453,6 +454,12 @@ ul {
 
 .action {
   padding-top: 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .action {
+    display: none;
+  }
 }
 
 .action-list {
