@@ -52,6 +52,12 @@ img {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .label {
   font-weight: 400;
   font-size: 12px;
@@ -362,6 +368,7 @@ ul {
 
 .qualities__item {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .qualities__title {
@@ -390,6 +397,7 @@ ul {
   background: #f5f4fa;
   border-radius: 4px;
   display: flex;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
