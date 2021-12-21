@@ -1,15 +1,23 @@
 .clients {
-  // display: flex;
-  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    margin-left: -60px;
+  }
 }
 
 .clients__item {
-  display: flex;
   color: $social-icon-color;
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 60px);
+    margin-left: 60px;
+  }
 }
 
 .clients__link {

@@ -1,10 +1,19 @@
 .qualities {
-  // display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    margin-left: -30px;
+  }
 }
 
 .qualities__item {
   width: 100%;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .qualities__title {

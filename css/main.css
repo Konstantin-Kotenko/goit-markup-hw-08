@@ -58,6 +58,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 .label {
   font-weight: 400;
   font-size: 12px;
@@ -297,6 +303,7 @@ ul {
 
 .social-list {
   display: flex;
+  justify-content: center;
 }
 
 .social-list__item {
@@ -309,10 +316,7 @@ ul {
 }
 
 .social-list__link {
-  width: 100%;
-  height: 44px;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
@@ -327,6 +331,8 @@ ul {
 
 .social-list__icon {
   fill: currentColor;
+  width: 100%;
+  vertical-align: middle;
 }
 
 .social-list__link--background {
@@ -366,9 +372,28 @@ ul {
   margin-bottom: 30px;
 }
 
+.qualities {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .qualities {
+    margin-left: -30px;
+  }
+}
+
 .qualities__item {
   width: 100%;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .qualities__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .qualities__title {
@@ -445,45 +470,76 @@ ul {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    margin-left: -30px;
+  }
 }
 
 .team-list__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
-.team-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .team-list__item-wrapper {
-  padding: 30px 32px;
+  padding: 30px 24px;
 }
 
 .team-list__item-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   color: #212121;
   margin-bottom: 10px;
 }
 
 .team-list__item-position {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.18;
   color: #757575;
   margin-bottom: 16px;
 }
 
 .clients {
-  margin-bottom: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    margin-left: -60px;
+  }
 }
 
 .clients__item {
-  display: flex;
   color: #afb1b8;
+  width: calc(100% / 2 - 30px);
+  margin-left: 30px;
+}
+
+.clients__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc(100% / 3 - 60px);
+    margin-left: 60px;
+  }
 }
 
 .clients__link {
