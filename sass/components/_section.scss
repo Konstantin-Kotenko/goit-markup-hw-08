@@ -13,4 +13,7 @@
   @extend %text;
   margin-bottom: 30px;
   color: $primary-shade-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }

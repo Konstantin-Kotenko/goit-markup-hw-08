@@ -137,6 +137,12 @@ ul {
   color: #212121;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
+
 .primary-button {
   font-weight: 700;
   line-height: 1.87;
@@ -719,10 +725,11 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__join-us {
     margin-left: auto;
+    margin-top: 5px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer__join-us {
     margin-bottom: 60px;
   }
