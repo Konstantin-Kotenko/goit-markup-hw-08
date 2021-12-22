@@ -738,6 +738,7 @@ ul {
 }
 
 .footer {
+  width: 100%;
   background-color: #30313b;
   display: flex;
   padding: 60px 0;
