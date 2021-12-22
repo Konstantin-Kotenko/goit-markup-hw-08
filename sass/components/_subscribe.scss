@@ -1,21 +1,27 @@
 .subscribe {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 15px 0px 15px 16px;
   @extend %subscribe;
   line-height: 1.25;
-  display: flex;
   align-items: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   color: rgba($secondary-color, 0.6);
   outline: none;
-  margin-right: 12px;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
   &::placeholder {
     @extend %subscribe;
     line-height: 1.25;
@@ -23,5 +29,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba($secondary-color, 0.6);
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 12px;
+    width: 358px;
   }
 }
