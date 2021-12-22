@@ -3,13 +3,15 @@
 }
 
 .header__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
-.menu_button {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -17,14 +19,9 @@
   background-color: transparent;
 }
 
-.menu_button .icon-close-nav {
-  display: none;
-}
+.header-menu {
+  display: flex;
+  width: 100%;
 
-.menu_button.is-open .icon-close-nav {
-  display: block;
-}
-
-.menu_button.is-open .icon-menu-nav {
-  display: none;
+  justify-content: space-between;
 }
