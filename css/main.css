@@ -270,8 +270,13 @@ ul {
 }
 
 .contacts {
-  display: none;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item {
