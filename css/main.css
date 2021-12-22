@@ -44,6 +44,7 @@ img {
   width: 100%;
   display: flex;
   height: auto;
+  margin: 0 auto;
 }
 
 .container {
