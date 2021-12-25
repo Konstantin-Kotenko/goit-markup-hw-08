@@ -298,12 +298,19 @@ ul {
   }
 }
 
+.contacts__item {
+  color: #757575;
+}
+
 @media screen and (min-width: 1200px) {
-  .contacts__item {
-    color: #757575;
-  }
   .contacts__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
