@@ -870,6 +870,7 @@ ul {
 .portfolio__type {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .portfolio__item {
@@ -890,6 +891,8 @@ ul {
   .portfolio__item {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
