@@ -24,9 +24,11 @@
   @include font(700, 14px, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
   color: $primary-shade-color;
   margin-bottom: 10px;
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 
 .qualities__paragraph {
