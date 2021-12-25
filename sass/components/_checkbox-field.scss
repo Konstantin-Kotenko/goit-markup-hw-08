@@ -6,13 +6,15 @@
 
 .checkbox-field__label {
   @extend %field;
-  line-height: 1.71;
+  // font-size: 14px;
+  line-height: 1.16;
+  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   span {
     width: 16px;
     height: 15px;
@@ -20,8 +22,8 @@
     border-radius: 2px;
     margin-right: 8px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
   }
   .checkbox-field__input:checked + & span {
     background-color: $accent-color;
@@ -31,8 +33,9 @@
 
 .checkbox-field__agreement {
   @extend %field;
-  line-height: 1.71;
-  text-decoration-line: underline;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  // text-decoration-line: underline;
   text-decoration-skip-ink: none;
   color: $accent-color;
 }

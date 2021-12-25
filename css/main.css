@@ -13,7 +13,7 @@
 
 .textarea-field__input:focus::placeholder, .checkbox-field__label, .checkbox-field__agreement {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .section__title {
@@ -477,8 +477,24 @@ ul {
   }
 }
 
+.menu-container .icon-close-nav {
+  display: none;
+}
+
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.menu-container.is-open.icon-close-nav {
+  display: block;
+}
+
+.menu-container.is-open .icon-close-nav {
+  display: block;
+}
+
+.menu-container.is-open .icon-menu-nav {
+  display: none;
 }
 
 .menu-button {
@@ -1101,20 +1117,34 @@ ul {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    margin-top: 93px;
+    margin-bottom: 94px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
-    padding: 40px;
   }
 }
 
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .input-field {
@@ -1190,13 +1220,11 @@ ul {
 }
 
 .checkbox-field__label {
-  line-height: 1.71;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .checkbox-field__label span {
@@ -1206,8 +1234,6 @@ ul {
   border-radius: 2px;
   margin-right: 8px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .checkbox-field__input:checked + .checkbox-field__label span {
@@ -1216,8 +1242,8 @@ ul {
 }
 
 .checkbox-field__agreement {
-  line-height: 1.71;
-  text-decoration-line: underline;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-decoration-skip-ink: none;
   color: #2196f3;
 }
