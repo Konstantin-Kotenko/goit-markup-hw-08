@@ -204,6 +204,17 @@ ul {
   background-color: transparent;
   padding: 0;
   margin: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .open-nav {
+    display: none;
+  }
+}
+
+.open-nav:focus {
+  fill: #2196f3;
 }
 
 .close-nav {
@@ -212,6 +223,17 @@ ul {
   padding: 0;
   margin-left: auto;
   display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .close-nav {
+    display: none;
+  }
+}
+
+.close-nav:focus {
+  fill: #2196f3;
 }
 
 .logo {
@@ -528,6 +550,12 @@ ul {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -592,6 +620,14 @@ ul {
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mob-menu-social__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .hero {
