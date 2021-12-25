@@ -1,0 +1,19 @@
+.mob-menu {
+  position: fixed;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  z-index: 5;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

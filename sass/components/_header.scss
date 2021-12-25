@@ -11,6 +11,9 @@
 }
 
 .menu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -24,20 +27,6 @@
   }
 }
 
-// @media screen and (max-width: 767px) {
-//   .menu-container {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100vw;
-//     height: 100vh;
-//     background: #ffffff;
-//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-//     z-index: 2;
-//     transform: translateX(100%);
-//   }
-// }
-
 .header__menu {
   display: flex;
   @media screen and (max-width: 767px) {
@@ -48,103 +37,4 @@
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     margin-right: auto;
   }
-}
-.mob-menu {
-  position: fixed;
-  background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.mob-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-menu__item {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  color: $primary-shade-color;
-  padding-left: 25px;
-}
-
-.mob-menu-contacts {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-  margin-bottom: 64px;
-  //   font-weight: 500;
-  // font-size: 24px;
-  // line-height: 28px;
-  // letter-spacing: 0.02em;
-
-  // color: #757575;
-}
-
-.mob-menu-contacts__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-menu-social__list {
-  display: flex;
-}
-
-.mob-menu-social__item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.mob-menu__link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: $primary-shade-color;
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
-}
-
-.mob-menu__link--active {
-  color: $accent-color;
-}
-
-.mob-menu-contacts__tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
-  letter-spacing: 0.02em;
-  color: $accent-color;
-}
-
-.mob-menu-contacts__mailo {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.166;
-  letter-spacing: 0.02em;
-  color: $text-color;
-}
-
-.mob-menu-social__item {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: $accent-color;
 }
