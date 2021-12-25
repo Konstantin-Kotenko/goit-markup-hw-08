@@ -3,12 +3,14 @@
 }
 
 .header__container {
+  @media screen and(max-width:767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .menu-button {
@@ -19,9 +21,15 @@
   background-color: transparent;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .header-menu {
-  @media screen and (min-width: 480px) {
-    display: flex;
+  display: flex;
+  @media screen and (max-width: 767px) {
     width: 100%;
     justify-content: space-between;
     align-items: center;
