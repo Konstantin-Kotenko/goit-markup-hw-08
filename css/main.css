@@ -54,7 +54,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -1117,13 +1117,6 @@ ul {
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 1199px) {
-  .modal {
-    margin-top: 93px;
-    margin-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -1225,6 +1218,13 @@ ul {
   color: #757575;
   margin-bottom: 30px;
   display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-field__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-field__label span {

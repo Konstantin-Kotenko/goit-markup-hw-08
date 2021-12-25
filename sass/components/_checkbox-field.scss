@@ -6,15 +6,17 @@
 
 .checkbox-field__label {
   @extend %field;
-  // font-size: 14px;
   line-height: 1.16;
-  // line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;
   margin-bottom: 30px;
   display: flex;
   // justify-content: center;
   // align-items: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
   span {
     width: 16px;
     height: 15px;
@@ -35,7 +37,6 @@
   @extend %field;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  // text-decoration-line: underline;
   text-decoration-skip-ink: none;
   color: $accent-color;
 }
