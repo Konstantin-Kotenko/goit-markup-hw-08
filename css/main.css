@@ -54,7 +54,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
@@ -197,6 +197,21 @@ ul {
 
 .close-btn__icon:hover, .close-btn__icon:focus {
   fill: #2196f3;
+}
+
+.open-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.close-menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-left: auto;
+  display: block;
 }
 
 .logo {
@@ -477,72 +492,32 @@ ul {
   }
 }
 
-.menu-container .icon-close-nav {
-  display: none;
-}
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
-.menu-container.is-open.icon-close-nav {
-  display: block;
-}
-
-.menu-container.is-open .icon-close-nav {
-  display: block;
-}
-
-.menu-container.is-open .icon-menu-nav {
-  display: none;
-}
-
-.menu-button {
-  position: fixed;
-  right: 15px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.menu-button.is-open .icon-close-nav {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu-nav {
-  display: none;
-}
-
-.menu-button .icon-close-nav {
-  display: none;
-}
-
-.menu-button:hover, .menu-button:focus {
-  color: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-.header-menu {
+.header__menu {
   display: flex;
 }
 
 @media screen and (max-width: 767px) {
-  .header-menu {
+  .header__menu {
     justify-content: space-between;
     align-items: center;
-    padding: 16px 15px;
+    padding: 10px 15px;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .header-menu {
+  .header__menu {
     margin-right: auto;
   }
+}
+
+.mob-menu {
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 .hero {
