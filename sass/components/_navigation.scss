@@ -1,5 +1,11 @@
 .navigation {
-  margin-left: 93px;
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
 }
 
 .navigation__list {

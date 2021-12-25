@@ -2,14 +2,19 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: end;
+  }
   margin-left: auto;
 }
 
-.contacts__item {
-  color: $text-color;
-  &:not(:last-child) {
-    margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    color: $text-color;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -22,9 +27,8 @@
   &:focus {
     color: $accent-color;
   }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: end;
+  @media screen and (max-width: 1199px) {
+    @include font(500, 12px, 1.16);
   }
 }
 
@@ -32,6 +36,26 @@
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__icon {
+    display: none;
+  }
+}
+
+.contacts__icon-first {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+    fill: currentColor;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon-first {
+    display: none;
+  }
 }
 
 .second-contacts__map-link {
