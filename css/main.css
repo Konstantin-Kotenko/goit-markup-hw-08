@@ -199,14 +199,14 @@ ul {
   fill: #2196f3;
 }
 
-.open-btn {
+.open-nav {
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
 }
 
-.close-menu-btn {
+.close-nav {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -518,6 +518,80 @@ ul {
   height: 100vh;
   top: 0;
   left: 0;
+  padding-top: 10px;
+}
+
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  padding-left: 25px;
+}
+
+.mob-menu-contacts {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 64px;
+}
+
+.mob-menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-social__list {
+  display: flex;
+}
+
+.mob-menu-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-menu__link:focus, .mob-menu__link:hover {
+  color: #2196f3;
+}
+
+.mob-menu__link--active {
+  color: #2196f3;
+}
+
+.mob-menu-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-menu-contacts__mailo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .hero {

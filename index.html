@@ -23,32 +23,44 @@
       <div class="container header__container">
         <div class="header__menu">
           <a class="logo link" href=""><span class="logo__web">Web</span>Studio</a>
-          <button type="button" class="open-btn">
+          <button type="button" class="open-nav">
             <svg width="40" height="40"><use href="images/icons.svg#menu-nav"></use></svg>
           </button>
-          <div class="mob-menu">
-            <button type="button" class="close-menu-btn">
-              <svg width="40" height="40"><use href="images/icons.svg#close-nav"></use></svg>
-            </button>
-            <ul class="mob-menu__list list">
-              <li class="mob-menu__item">
-                <a class="mob-menu__link mob-menu__link--active link" href="./index.html">Студия</a>
-              </li>
-              <li class="mob-menu__item">
-                <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="mob-menu__item">
-                <a class="mob-menu__link link" href="">Контакты</a>
-              </li>
-            </ul>
-            <ul class="mob-menu-contacts list">
-              <li class="mob-menu-contacts__item">
-                <a class="mob-menu-contacts__link link" href="tel:+380961111111"> +380961111111 </a>
-              </li>
-              <li class="mob-menu-contacts__item">
-                <a class="mob-menu-contacts__link link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
-              </li>
-            </ul>
+          <div class="mob-menu is-hidden">
+            <div class="container">
+              <div class="mob-menu-top">
+                <button type="button" class="close-nav">
+                  <svg width="40" height="40"><use href="images/icons.svg#close-nav"></use></svg>
+                </button>
+                <ul class="mob-menu__second-list list">
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link mob-menu__link--active link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mob-menu-bot">
+                <ul class="mob-menu-contacts list">
+                  <li class="mob-menu-contacts__item">
+                    <a class="mob-menu-contacts__link link" href="tel:+380961111111"> +380961111111 </a>
+                  </li>
+                  <li class="mob-menu-contacts__item">
+                    <a class="mob-menu-contacts__link link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                  </li>
+                </ul>
+                <ul class="mob-menu-social__list link">
+                  <li class="list mob-menu-social__item"><a href="" class="link">Instagram</a></li>
+                  <li class="list mob-menu-social__item"><a href="" class="link">Twitter</a></li>
+                  <li class="list mob-menu-social__item"><a href="" class="link">Facebook</a></li>
+                  <li class="list mob-menu-social__item"><a href="" class="link">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div class="menu-container">
@@ -576,12 +588,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/menu.js"></script>
   </body>
 </html>
