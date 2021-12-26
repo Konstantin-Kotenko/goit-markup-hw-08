@@ -980,6 +980,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__container--wrapper {
     display: flex;
+    margin-right: 93px;
   }
 }
 
