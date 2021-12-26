@@ -974,6 +974,7 @@ ul {
   .footer__container--wrapper {
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 
@@ -986,7 +987,6 @@ ul {
 
 @media screen and (max-width: 1199px) {
   .footer__address-wrapper {
-    margin-bottom: 60px;
     text-align: center;
     display: block;
     justify-content: center;
@@ -1022,7 +1022,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__join-us {
-    margin-left: auto;
+    margin-left: 165px;
     margin-top: 5px;
   }
 }
