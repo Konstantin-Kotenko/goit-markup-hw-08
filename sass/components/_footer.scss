@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   background-color: $primary-background-color;
-  display: flex;
   padding: 60px 0;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -11,8 +10,6 @@
 .footer__container--wrapper {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    // padding-left: 61px;
-    // padding-right: 74px;
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
