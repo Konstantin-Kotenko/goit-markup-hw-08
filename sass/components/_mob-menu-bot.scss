@@ -31,13 +31,16 @@
   color: $text-color;
 }
 
-.mob-menu-bot__list-item {
+.mob-menu-bot__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mob-menu-bot__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $accent-color;
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
 }
