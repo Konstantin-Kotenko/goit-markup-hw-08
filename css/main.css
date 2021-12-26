@@ -985,6 +985,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__address-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer__address-wrapper {
     text-align: center;
