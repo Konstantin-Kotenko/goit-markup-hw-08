@@ -2,9 +2,6 @@
   width: 100%;
   background-color: $primary-background-color;
   padding: 60px 0;
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 }
 
 .footer__container--wrapper {
@@ -12,10 +9,11 @@
     display: flex;
     align-items: baseline;
     margin-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 74px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-right: 93px;
   }
 }
 
@@ -71,5 +69,6 @@
 .footer__subscription {
   @media screen and (min-width: 1200px) {
     margin-top: 12px;
+    margin-left: auto;
   }
 }
