@@ -995,7 +995,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__join-us {
-    margin-left: 165px;
+    margin-left: auto;
     margin-top: 5px;
   }
 }
