@@ -368,9 +368,15 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-left: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navigation {
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
@@ -427,7 +433,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
-    justify-content: end;
   }
 }
 
@@ -586,12 +591,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .header__menu {
-    margin-right: auto;
   }
 }
 
