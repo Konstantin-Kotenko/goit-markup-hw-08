@@ -1291,6 +1291,13 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
+@media screen and (max-width: 1199px) {
+  .textarea-field__input:focus::placeholder {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .checkbox-field {
   margin-bottom: 30px;
   align-items: center;
