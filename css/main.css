@@ -1049,8 +1049,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer__subscription {
     margin-top: 12px;
-    display: block;
-    margin-left: auto;
   }
 }
 
