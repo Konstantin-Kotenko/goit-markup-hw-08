@@ -1,0 +1,23 @@
+.social-text-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-text-links__item {
+  &:not(:last-child) {
+    border-right: 1px solid rgba($primary-shade-color, 0.2);
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 479px) {
+    margin-bottom: 10px;
+  }
+}
+
+.social-text-links__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  padding-right: 10px;
+}

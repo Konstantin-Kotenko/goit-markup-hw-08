@@ -1,9 +1,8 @@
 .hero {
   @media screen and (max-width: 1199px) {
-    padding-top: 118px;
+    padding: 118px 0;
   }
   padding: 200px 0;
-  height: 600px;
   max-width: 1600px;
   margin: auto;
   background-color: $primary-background-color;
