@@ -642,7 +642,7 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero-tab-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), #2f303a66), url(../images/bg-hero-tab-1x.jpg);
   }
 }
 
