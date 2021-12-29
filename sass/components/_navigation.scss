@@ -1,9 +1,6 @@
 .navigation {
-  display: flex;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
   @media screen and (min-width: 768px) {
+    display: flex;
     margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
@@ -11,17 +8,28 @@
   }
 }
 
-.navigation__list {
-  display: flex;
+.navigation--not-active {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
+.navigation__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 .navigation__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .navigation__link {
-  @include font(500, 14px, 1.14);
-  padding: 32px 0;
+  @include font(500, 40px, 1.175);
   letter-spacing: 0.02em;
   color: $primary-shade-color;
   display: block;
@@ -31,19 +39,25 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    @include font(500, 14px, 1.14);
+    padding: 32px 0;
+  }
 }
 
 .navigation__link--active {
   color: $accent-color;
-  &::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: rgba($accent-color, 0.902);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    color: $accent-color;
+  @media screen and (min-width: 768px) {
+    &::after {
+      content: '';
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: rgba($accent-color, 0.902);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: $accent-color;
+    }
   }
 }
