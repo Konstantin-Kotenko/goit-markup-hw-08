@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    @include bg-img('./images/bg-hero-mob-2x.jpg');
+    @include bg-img('../images/bg-hero-mob-2x.jpg');
   }
   @media screen and (min-width: 768px) {
     @include bg-img('/images/bg-hero-tab-1x.jpg');
