@@ -1,4 +1,5 @@
-.primary-button, .secondary-button {
+.primary-button,
+.secondary-button {
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
@@ -6,12 +7,15 @@
   border: none;
 }
 
-.subscribe__input, .subscribe__input::placeholder {
+.subscribe__input,
+.subscribe__input::placeholder {
   font-weight: 400;
   font-size: 16px;
 }
 
-.textarea-field__input:focus::placeholder, .checkbox-field__label, .checkbox-field__agreement {
+.textarea-field__input:focus::placeholder,
+.checkbox-field__label,
+.checkbox-field__agreement {
   font-weight: 400;
   font-size: 12px;
 }
@@ -21,7 +25,12 @@
   font-size: 28px;
 }
 
-.section__title, .secondary-button, .action-list__overlay-text, .team-list__item-name, .team-list__item-position, .modal__title {
+.section__title,
+.secondary-button,
+.action-list__overlay-text,
+.team-list__item-name,
+.team-list__item-position,
+.modal__title {
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -159,10 +168,12 @@ ul {
   line-height: 1.62;
   color: #212121;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.secondary-button:focus, .secondary-button:hover {
+.secondary-button:focus,
+.secondary-button:hover {
   color: #f5f4fa;
   background: #2196f3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -193,7 +204,8 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn__icon:hover, .close-btn__icon:focus {
+.close-btn__icon:hover,
+.close-btn__icon:focus {
   fill: #2196f3;
 }
 
@@ -211,7 +223,8 @@ ul {
   }
 }
 
-.burger-button:focus, .burger-button:hover {
+.burger-button:focus,
+.burger-button:hover {
   fill: #2196f3;
 }
 
@@ -233,7 +246,8 @@ ul {
   }
 }
 
-.close-button:focus, .close-button:hover {
+.close-button:focus,
+.close-button:hover {
   fill: #2196f3;
 }
 
@@ -341,7 +355,8 @@ ul {
   position: relative;
 }
 
-.navigation__link:hover, .navigation__link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: #2196f3;
 }
 
@@ -431,7 +446,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__link:hover, .contacts__link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: #2196f3;
 }
 
@@ -509,7 +525,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.second-contacts__map-link:hover, .second-contacts__map-link:focus {
+.second-contacts__map-link:hover,
+.second-contacts__map-link:focus {
   color: #2196f3;
 }
 
@@ -521,7 +538,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.second-contacts__link:hover, .second-contacts__link:focus {
+.second-contacts__link:hover,
+.second-contacts__link:focus {
   color: #2196f3;
 }
 
@@ -555,7 +573,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__link:hover, .social-icons__link:focus {
+.social-icons__link:hover,
+.social-icons__link:focus {
   background-color: #2196f3;
   color: #ffffff;
 }
@@ -628,7 +647,7 @@ ul {
   max-width: 1600px;
   margin: auto;
   background-color: #30313b;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-mob-1x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-mob-1x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -642,31 +661,35 @@ ul {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-mob-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-mob-2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-tab-1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-tab-1x.jpg');
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-tab-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-tab-2x.jpg');
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-1x.jpg');
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/bg-hero-2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/bg-hero-2x.jpg');
   }
 }
 
@@ -902,7 +925,8 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover, .clients__link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid #2196f3;
   color: #2196f3;
 }
@@ -1100,7 +1124,8 @@ ul {
   transform: translateY(0);
 }
 
-.portfolio__item:hover, .portfolio__item:focus {
+.portfolio__item:hover,
+.portfolio__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
